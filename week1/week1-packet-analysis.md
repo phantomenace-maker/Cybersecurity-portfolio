@@ -47,7 +47,7 @@ Anyone between me and the server could read this too. That's why HTTPS matters.
 
 When I followed the HTTPS stream to example.com, almost everything was scrambled. I could still see the server's IP address (104.20.23.154) and the site name "example.com" in the Client Hello, which is sent before encryption starts. I could not see my request or the page that came back. Someone watching the network can tell which website I visited, but not what I did there.
 
-![Encrypted HTTPS stream](https-stream.png)
+![Encrypted HTTPS stream](https stream.png)
 
 ## Something unexpected
 My laptop's first `[SYN]` got no reply, so it sent it twice more, about 1 second and then 2 seconds later, before the server answered. My GET request was also sent twice. Wireshark marks these as "TCP Retransmission": some packets were lost on the way, and TCP noticed and sent them again automatically.
