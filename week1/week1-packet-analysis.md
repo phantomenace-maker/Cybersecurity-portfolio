@@ -17,7 +17,7 @@ I captured my laptop's network traffic while loading a plain-HTTP website (never
 
 My laptop (172.20.10.2) asked my router (172.20.10.1) for the address of neverssl.com. The answer was an **A record (IPv4): 34.223.124.45**. My laptop asked the same question three times, over both IPv4 and IPv6, and every answer gave the same address.
 
-![DNS lookup for neverssl.com](dns.png)
+![DNS lookup for neverssl.com](DNS O.png)
 
 ## 2. TCP handshake
 **Filter:** `tcp.stream eq 31`
